@@ -39,12 +39,6 @@ public class MyChain extends Chain {
     }
 
     public MyChain union(MyChain chain) {
-        /* Энэн дээр бол 2 chain нэмж үүсгэж байгаа.
-            Нэг нь буцаах хариу, нөгөөх нь огтлолцол.
-            result дотроо өөрийгөө copydood нэмж байгаа.
-            Ард нь дахиад өгөгдсөн chain ийг copydood оруулна.
-            Тэгээд result ээсээ огтлолцол дотор байгаа бүх элемэнтээ хасна.
-        */
         MyChain result = new MyChain();
         MyChain inter = this.intersection(chain);
         result.addRange(this.toArray());
@@ -56,3 +50,4 @@ public class MyChain extends Chain {
     }
 
 }
+
