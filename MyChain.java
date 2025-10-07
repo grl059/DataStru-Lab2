@@ -24,16 +24,6 @@ public class MyChain extends Chain {
     }
 
     public MyChain intersection(MyChain chain) {
-        /* 2 chain нэмж үүсгэж байгаа.
-        Эхнийх нь болохоор буцааж байгаа хариу.
-        2 дахь нь өөрийнх нь copy.
-        3 дахь мөр нь өөрийгөө Array болгоод тэрийгээ tmp рүү оруулсан.
-        4 дэх мөр chain ээрээ давталт явуулна.
-        5 дахь мөр нь chain ийнхаа I дахь элемэнтийг аваад хадгалж байгаа.
-        6 дахь мөр нь tmp дотор байгаа эсэхийг нь шалгаж байгаа.
-        Байхгүй бол -1 байгаа бол Index ээ буцаана.
-        Хэрэв байгаа бол тэрийгээ result дотроо нэмнэ. Тэгээд tmp гээс хасна.
-         */
         MyChain result = new MyChain();
         MyChain tmp = new MyChain();
         tmp.addRange(this.toArray());
@@ -64,4 +54,5 @@ public class MyChain extends Chain {
         }
         return result;
     }
+
 }
